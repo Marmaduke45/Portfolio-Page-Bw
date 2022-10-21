@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandon Woodthorpe's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&family=Source+Code+Pro:wght@300;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="img/Portfolio-open-tag.png" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">  
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="#services">My Services</a></li>
+                <li class="nav__item"><a class="nav__link" href="#about">About me</a></li>
+                <li class="nav__item"><a class="nav__link" href="#work">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 id="typed" class="section__title section__title--intro">
+            Hi, I am <strong>Brandon Woodthorpe</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Front-end Developer</p>
+        <img src="./img/Brandon-Square.png" class="intro__img" alt="Jane Smith smiling">
+    </section>
+
+<!-- My Services --> 
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Bring Designs To Life</h3>
+                <p>Given a design, I bring it to life on the web. Whether it's making accesible websites for everyone, or a beautiful page to display
+                    a product, every site is made with care.
+                </p>
+            </div>
+            <div class="service">
+                <h3>Problem Solving</h3>
+                <p>I believe that with a little bit of patients and knowing where to look for answers, any problem can be solved.</p>
+            </div>
+            <div class="service">
+                <h3>Clean Code</h3>
+                <p>Intuitive naming conventions and nice formatting have always one of my favorite parts of programming. I always try to find a solution that 
+                    not only works, but is understandable for the next person who has to maintain the codebase.</p>
+            </div>
+        </div>
+        <a href="#work" class="btn work-btn">My Work</a>
+    </section>
+
+<!-- About Me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">Front-end developer based in Ontario, Canada</p>
+
+        <div class="about-me__body">
+            <p>My name is Brandon Woodthorpe, I began my web-development journey in early 2022, but coding has been an interest of mine for years.
+                It began with my brother showing me a very basic language called Simba that I then used to automate a few web games.
+                I almost immediatly knew front-end development was for me as I love to create visually pleasing and easily navigatable sites.
+            </p>
+            <p>Since starting my front-end journey, I've been working with HTML, CSS, Javascript and ReactJS.
+                In the last year, I've been honing my skills and satiating my craving for knowlege through some of the projects you'll find on this page.
+                I'm now looking for a developer position to finally kick start my career and learn from professionals.
+            </p>
+        </div>
+        <img src="./img/Brandon-Tall.jpg" class="about-me__img" alt="Jane Smith leaning on a bus">
+    </section>
+
+<!-- My Work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My work</h2>
+        <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+
+        <div class="portfolio">
+            <!-- Portfolio Item 01 -->
+            <a href="./portfolio-item-1.html" class="portfolio__item">
+                <div class="portfolio__img">
+                    <img src="./img/portfolio-01.PNG" class="portfolio__img__img" alt="">
+                    <p class="portfolio__item__title">StayFlexi</p>
+                </div>
+            </a>
+            <!-- Portfolio Item 02 -->
+            <a href="./portfolio-item-2.html" class="portfolio__item">
+                <div class="portfolio__img">
+                    <img src="./img/portfolio-02.PNG" class="portfolio__img__img" alt="">
+                    <p class="portfolio__item__title">Watchlist</p>
+                </div>
+            </a>
+            <!-- Portfolio Item 03 -->
+            <a href="./portfolio-item-3.html" class="portfolio__item">
+                <div class="portfolio__img">
+                    <img src="./img/portfolio-03.PNG" class="portfolio__img__img" alt="">
+                    <p class="portfolio__item__title">Quizzical</p>
+                </div>
+            </a>
+            <!-- Portfolio Item 04 -->
+            <a href="./portfolio-item-4.html" class="portfolio__item">
+                <div class="portfolio__img">
+                    <img src="./img/LeadsTracker.png" class="portfolio__img__img" alt="">
+                    <p class="portfolio__item__title">LeadsTracker</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+<!-- Footer -->
+    <footer>
+        <a href="mailto:bmwoodthorpe@gmail.com" class="footer__link">bmwoodthorpe@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://codepen.io">
+                    <i class="fab fa-codepen"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/brandonwoodthorpe">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://twitter.com">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="logo">
+            <img src="img/Portfolio-close-tag.png" alt="">
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
