@@ -18,10 +18,10 @@
 
 
 
-    --fs-h1: 3rem;
-    --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
-    --fs-subtitle: 1rem;
+    --fs-h1: 2.5rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1rem;
+    --fs-subtitle: 0.5rem;
     --fs-body: 1rem;
 
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
@@ -36,6 +36,8 @@ html{
 }
 
 body{
+    width: 100%;
+    overflow-x: hidden;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     background: var(--clr-light);
@@ -180,7 +182,7 @@ strong{
 
 .service{
     max-width: 500px;
-    width: 350px;
+    width: 250px;
     margin: 0 auto;
 }
 
@@ -216,14 +218,14 @@ strong{
 .portfolio {
     display: grid;
     place-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    max-width: 300px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    max-width: 200px;
     margin: 0 auto;
 }
 
 .portfolio__item {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     background-color: var(--clr-accent);
     position: relative;
     text-align: center;
@@ -239,8 +241,8 @@ strong{
 }
 
 .portfolio__img__img{
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     object-fit: cover;
     transition: 
     opacity 250ms linear;
@@ -325,7 +327,7 @@ footer a {
 /* header */
 .logo{
     max-width: 250px;
-    width: 250px;
+    width: 150px;
     
 }
 
@@ -464,10 +466,32 @@ header{
 
 /* Media Queries */
 
-@media(min-width: 700px){
+@media(min-width: 500px){
     :root {
-        --fs-subtitle: 1.5rem;
+        --fs-h1: 3rem;
+        --fs-h2: 2.25rem;
+        --fs-h3: 1.25rem;
+        --fs-subtitle: 1rem;
+        --fs-body: 1rem;
     }
+    .portfolio{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        max-width: 400px;
+    }
+    .portfolio__item,
+    .portfolio__img__img{
+        width: 200px;
+        height: 200px;
+    }
+    .service{
+        max-width: 500px;
+        width: 350px;
+        margin: 0 auto;
+    }
+}
+
+
+@media(min-width: 700px){
     .portfolio{
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         max-width: 500px;
@@ -539,6 +563,11 @@ header{
         grid-area: text;
     }
 
+    .logo{
+        max-width: 250px;
+        width: 250px;
+        
+    }
 
 }
 
@@ -577,3 +606,4 @@ header{
     }
 
 }
+
