@@ -281,6 +281,7 @@ strong{
     z-index: 10;
     opacity: 0;
     transition: opacity 250ms linear;
+    text-shadow: 2px 2px 2px #fff;
 }
 
 .portfolio__img:hover .portfolio__item__title{
@@ -461,6 +462,11 @@ header{
 
 .leads__icon{
     border-radius: 20px;
+}
+
+.resume-img{
+    height: 90vh;
+    margin: 0px auto;
 }
 
 
