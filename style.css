@@ -82,6 +82,12 @@ section{
     font-size: var(--fs-body);
 }
 
+.back-btn{
+    background-color: transparent;
+    border: 2px solid #04080f;
+    margin: 0 auto;
+}
+
 /* Typography */
 
 h1,
@@ -449,6 +455,7 @@ header{
     padding: 0 2em 2em;
     max-width: 1000px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .portfolio-item-individual p {
